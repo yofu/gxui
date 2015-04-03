@@ -113,6 +113,14 @@ func (t *Theme) SetDefaultFont(f gxui.Font) {
 	t.defaultFont = f
 }
 
+func (t *Theme) DefaultMonospaceFont() gxui.Font {
+	return t.defaultMonospaceFont
+}
+
+func (t *Theme) SetDefaultMonospaceFont(f gxui.Font) {
+	t.defaultMonospaceFont = f
+}
+
 func (t *Theme) CreateBubbleOverlay() gxui.BubbleOverlay {
 	return CreateBubbleOverlay(t)
 }
