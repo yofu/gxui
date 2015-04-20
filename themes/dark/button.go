@@ -5,9 +5,9 @@
 package dark
 
 import (
-	"github.com/google/gxui"
-	"github.com/google/gxui/math"
-	"github.com/google/gxui/mixins"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/math"
+	"github.com/yofu/gxui/mixins"
 )
 
 type Button struct {

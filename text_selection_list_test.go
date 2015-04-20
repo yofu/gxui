@@ -4,9 +4,9 @@
 
 package gxui
 
-import test "github.com/google/gxui/testing"
+import test "github.com/yofu/gxui/testing"
 import (
-	"github.com/google/gxui/interval"
+	"github.com/yofu/gxui/interval"
 	"testing"
 )
 

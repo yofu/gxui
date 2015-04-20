@@ -12,9 +12,9 @@ import (
 
 	"github.com/go-gl/gl/v2.1/gl"
 	"github.com/go-gl/glfw/v3.1/glfw"
-	"github.com/google/gxui"
-	"github.com/google/gxui/drivers/gl/platform"
-	"github.com/google/gxui/math"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/drivers/gl/platform"
+	"github.com/yofu/gxui/math"
 )
 
 const viewportDebugEnabled = false

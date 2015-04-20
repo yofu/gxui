@@ -5,8 +5,8 @@
 package parts
 
 import (
-	"github.com/google/gxui"
-	"github.com/google/gxui/mixins/outer"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/mixins/outer"
 )
 
 type PaintChildrenOuter interface {

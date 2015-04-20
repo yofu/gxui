@@ -5,7 +5,7 @@
 package dark
 
 import (
-	"github.com/google/gxui"
+	"github.com/yofu/gxui"
 )
 
 type Style struct {

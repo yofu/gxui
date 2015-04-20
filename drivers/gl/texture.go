@@ -5,7 +5,7 @@
 package gl
 
 import (
-	"github.com/google/gxui/math"
+	"github.com/yofu/gxui/math"
 	"image"
 
 	"github.com/go-gl/gl/v2.1/gl"

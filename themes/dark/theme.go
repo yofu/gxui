@@ -7,8 +7,8 @@ package dark
 import (
 	"fmt"
 
-	"github.com/google/gxui"
-	"github.com/google/gxui/gxfont"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/gxfont"
 )
 
 type Theme struct {

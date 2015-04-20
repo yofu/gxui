@@ -4,7 +4,7 @@
 
 package math
 
-import test "github.com/google/gxui/testing"
+import test "github.com/yofu/gxui/testing"
 import "testing"
 
 func TestMat2InvertIdent(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/go-gl/glfw/v3.1/glfw"
-	"github.com/google/gxui"
-	"github.com/google/gxui/math"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/math"
 )
 
 // Maximum time allowed for application to process events on termination.

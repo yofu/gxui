@@ -6,7 +6,7 @@ package mixins
 
 import (
 	"fmt"
-	"github.com/google/gxui"
+	"github.com/yofu/gxui"
 )
 
 type TreeInternalNode struct {

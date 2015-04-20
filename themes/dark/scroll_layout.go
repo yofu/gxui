@@ -5,8 +5,8 @@
 package dark
 
 import (
-	"github.com/google/gxui"
-	"github.com/google/gxui/mixins"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/mixins"
 )
 
 func CreateScrollLayout(theme *Theme) gxui.ScrollLayout {

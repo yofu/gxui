@@ -13,10 +13,10 @@ import (
 	_ "image/png"
 	"os"
 
-	"github.com/google/gxui"
-	"github.com/google/gxui/drivers/gl"
-	"github.com/google/gxui/samples/flags"
-	"github.com/google/gxui/themes/dark"
+	"github.com/yofu/gxui"
+	"github.com/yofu/gxui/drivers/gl"
+	"github.com/yofu/gxui/samples/flags"
+	"github.com/yofu/gxui/themes/dark"
 )
 
 func appMain(driver gxui.Driver) {
