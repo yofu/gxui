@@ -118,6 +118,13 @@ func newViewport(driver *driver, width, height int, title string, fullscreen boo
 		v.Lock()
 		if v.pendingMouseMoveEvent == nil {
 			v.pendingMouseMoveEvent = &gxui.MouseEvent{}
+			m := 1
+			for _, bt := range []glfw.MouseButton{glfw.MouseButtonLeft, glfw.MouseButtonMiddle, glfw.MouseButtonRight} {
+				if w.GetMouseButton(bt) == glfw.Press {
+					v.pendingMouseMoveEvent.Button |= gxui.MouseButton(m)
+				}
+				m <<= 1
+			}
 			driver.Call(func() {
 				v.Lock()
 				ev := *v.pendingMouseMoveEvent
@@ -145,6 +152,13 @@ func newViewport(driver *driver, width, height int, title string, fullscreen boo
 		v.Lock()
 		if v.pendingMouseScrollEvent == nil {
 			v.pendingMouseScrollEvent = &gxui.MouseEvent{}
+			m := 1
+			for _, bt := range []glfw.MouseButton{glfw.MouseButtonLeft, glfw.MouseButtonMiddle, glfw.MouseButtonRight} {
+				if w.GetMouseButton(bt) == glfw.Press {
+					v.pendingMouseMoveEvent.Button |= gxui.MouseButton(m)
+				}
+				m <<= 1
+			}
 			driver.Call(func() {
 				v.Lock()
 				ev := *v.pendingMouseScrollEvent
