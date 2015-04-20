@@ -13,7 +13,7 @@ type InputEventHandlerOuter interface{}
 type InputEventHandler struct {
 	outer         InputEventHandlerOuter
 	isMouseOver   bool
-	isMouseDown   MouseButton
+	isMouseDown   gxui.MouseButton
 	onClick       gxui.Event
 	onDoubleClick gxui.Event
 	onKeyPress    gxui.Event
