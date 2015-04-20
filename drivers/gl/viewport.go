@@ -171,17 +171,25 @@ func newViewport(driver *driver, width, height int, title string, fullscreen boo
 			Point:    p,
 			Modifier: translateKeyboardModifier(mod),
 		}
-		switch button {
-		case glfw.MouseButtonLeft:
-			ev.Button = gxui.MouseButtonLeft
-		case glfw.MouseButtonMiddle:
-			ev.Button = gxui.MouseButtonMiddle
-		case glfw.MouseButtonRight:
-			ev.Button = gxui.MouseButtonRight
-		}
 		if action == glfw.Press {
+			switch button {
+			case glfw.MouseButtonLeft:
+				ev.Button |= gxui.MouseButtonLeft
+			case glfw.MouseButtonMiddle:
+				ev.Button |= gxui.MouseButtonMiddle
+			case glfw.MouseButtonRight:
+				ev.Button |= gxui.MouseButtonRight
+			}
 			v.onMouseDown.Fire(ev)
 		} else {
+			switch button {
+			case glfw.MouseButtonLeft:
+				ev.Button &= ^gxui.MouseButtonLeft
+			case glfw.MouseButtonMiddle:
+				ev.Button &= ^gxui.MouseButtonMiddle
+			case glfw.MouseButtonRight:
+				ev.Button &= ^gxui.MouseButtonRight
+			}
 			v.onMouseUp.Fire(ev)
 		}
 	})
