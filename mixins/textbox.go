@@ -52,7 +52,7 @@ func (t *TextBox) lineMouseDown(line TextBoxLine, ev gxui.MouseEvent) {
 }
 
 func (t *TextBox) lineMouseUp(line TextBoxLine, ev gxui.MouseEvent) {
-	if ev.IsLeftDown() { // TODO: when mouse button is up, ev.IsLeftDown returns false
+	if ev.IsLeftDown() {
 		t.selectionDragging = false
 		if !ev.Modifier.Control() {
 			t.controller.SetSelection(t.selectionDrag)
